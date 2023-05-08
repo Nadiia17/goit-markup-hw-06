@@ -10,7 +10,7 @@
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
   --dark-bg: rgba(46, 47, 66, 0.7);
-  --bg-modal-window: rgba(46, 47, 66, 0.4);
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
 
   /* Card Set */
   --indent-column: 24px;
@@ -62,7 +62,7 @@ button {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--color-slate);
 
   background-color: var(--color-white);
@@ -117,7 +117,7 @@ body {
 }
 
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -148,14 +148,16 @@ body {
 }
 
 .card-set-item {
-  flex-basis: calc((100% - var(--indent-column) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc(
+    (100% - var(--indent-column) * (var(--items) - 1)) / var(--items)
+  );
 }
 
 /* ------------ /Card Set -------------- */
 
 /* --------------- Logo --------------- */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -182,7 +184,8 @@ body {
 /* --------------- Header ---------------*/
 .header {
   border-bottom: 1px solid var(--color-cornflower);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header {
   display: flex;
@@ -236,10 +239,10 @@ body {
 }
 
 .current-page::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0px;
-  bottom: -1px;
+  bottom: -2px;
 
   display: block;
 
@@ -281,7 +284,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(var(--dark-bg), var(--dark-bg)), url("../images/hero/hero-bcg.jpg");
+  background-image: linear-gradient(var(--dark-bg), var(--dark-bg)),
+    url('../images/hero/hero-bcg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -396,7 +400,8 @@ body {
   text-align: center;
   background-color: var(--color-white);
 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -464,7 +469,8 @@ body {
   border-radius: 4px;
   color: var(--color-light-slate);
 
-  transition: border-color var(--transition-dur-func), color var(--transition-dur-func);
+  transition: border-color var(--transition-dur-func),
+    color var(--transition-dur-func);
 }
 
 .customers-icon {
@@ -511,8 +517,10 @@ body {
   background-color: var(--color-cloud);
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
-  transition: color var(--transition-dur-func), background-color var(--transition-dur-func),
-    border-color var(--transition-dur-func), box-shadow var(--transition-dur-func);
+  transition: color var(--transition-dur-func),
+    background-color var(--transition-dur-func),
+    border-color var(--transition-dur-func),
+    box-shadow var(--transition-dur-func);
 }
 
 .button-portfolio:hover,
@@ -521,7 +529,8 @@ body {
   background-color: var(--color-ocean-hover);
   border-color: transparent;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* .project-list {
@@ -543,7 +552,8 @@ body {
 }
 .project-link:hover,
 .project-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-content {
@@ -653,9 +663,10 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: var(--bg-modal-window);
+  background-color: var(--navy-blue-modal);
 
-  transition: opacity var(--transition-dur-func), visibility var(--transition-dur-func);
+  transition: opacity var(--transition-dur-func),
+    visibility var(--transition-dur-func);
 }
 
 .backdrop.is-hidden {
@@ -669,10 +680,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+
   width: 408px;
   min-height: 576px;
   background-color: var(--color-dairy);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-dur-func);
 }
@@ -692,7 +710,8 @@ body {
   background: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: background-color var(--transition-dur-func), border var(--transition-dur-func);
+  transition: background-color var(--transition-dur-func),
+    border var(--transition-dur-func);
 }
 
 .modal-close-btn:hover,
@@ -708,4 +727,55 @@ body {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: var(--color-white);
+}
+
+/* ----------------Modal form ------------*/
+
+.modal-title {
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-form-field {
+}
+.modal-form-input-desc,
+.modal-form-textarea-desc {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+}
+.modal-form-input {
+  padding-left: 38px;
+
+  width: 100%;
+  height: 40px;
+
+  color: var(--color-navy-blue);
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+}
+.modal-form-textarea {
+}
+.modal-form-textarea-desc {
+}
+.modal-form-comment {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 120px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+}
+.modal-form-checkbox {
+}
+.modal-form-checkbox-desc {
+}
+.modal-form-submit {
 }
