@@ -619,6 +619,7 @@ body {
 
 .footer-left-side {
   margin-right: 120px;
+  min-width: 264px;
 }
 
 .footer-logo {
@@ -626,12 +627,9 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-text {
-  max-width: 264px;
-}
-
 .footer-sosial-media {
   margin-right: 80px;
+  min-width: 208px;
 }
 
 .footer-media-title,
@@ -797,20 +795,27 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
 }
-.modal-form {
-  display: flex;
-  flex-direction: column;
-}
-.modal-form-field {
-  margin-bottom: 8px;
-}
-.modal-form-input-desc {
-  display: block;
-  margin-bottom: 4px;
+
+/* common text style for modal form */
+.modal-form-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  margin-bottom: 8px;
+}
+
+.modal-form-input-desc {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-form-input-wrapper {
@@ -826,6 +831,7 @@ body {
   height: 40px;
 
   color: var(--color-navy-blue);
+
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
 
@@ -857,10 +863,6 @@ body {
 .modal-form-textarea-desc {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--color-light-slate);
 }
 .modal-form-comment {
   display: block;
@@ -871,6 +873,7 @@ body {
   height: 120px;
 
   color: var(--color-navy-blue);
+
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
 
@@ -883,25 +886,22 @@ body {
 }
 
 .modal-form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   color: var(--color-light-slate);
 }
 
+.privacy-policy-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
 .modal-form-checkbox {
+  top: 100%;
+  left: 8px;
   transition: border-color var(--transition-dur-func);
 }
 .modal-form-checkbox-desc {
   display: flex;
   align-items: center;
-
-  margin-bottom: 24px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--color-light-slate);
 }
 
 /* Fake checkbox via before */
